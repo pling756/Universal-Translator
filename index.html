@@ -1099,7 +1099,6 @@ const SRI = {
   mammoth:'', mammothFallback:'',
   pdfjs:'', pdfjsFallback:''
 };
-};
 function loadScript(src, integrity){
   return new Promise((res, rej) => {
     if(document.querySelector('script[src="' + src + '"]')) return res();
