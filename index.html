@@ -1095,21 +1095,10 @@ function addHistory(item){
 /* ================= 外部脚本动态加载 ================= */
 /* SRI 哈希：运行 sri.ps1 生成后填入；留空则跳过完整性校验 */
 const SRI = {
-  downloading tesseract ...
-downloading tesseractFallback ...
-downloading mammoth ...
-downloading mammothFallback ...
-downloading pdfjs ...
-downloading pdfjsFallback ...
-
-OK 6 / 6. Paste these into the SRI object (empty means skip check):
-
-  tesseract: 'sha384-GJqSu7vueQ9qN0E9yLPb3Wtpd7OrgK8KmYzC8T1IysG1bcvxvIO4qtYR/D3A991F',
-  tesseractFallback: 'sha384-GJqSu7vueQ9qN0E9yLPb3Wtpd7OrgK8KmYzC8T1IysG1bcvxvIO4qtYR/D3A991F',
-  mammoth: 'sha384-/cXAMbzovUIKbBERjPmR3SnPTh8siWr5lsvFYj1Uq4XP0yaJUZJmsh0YXyGv5P0y',
-  mammothFallback: 'sha384-/cXAMbzovUIKbBERjPmR3SnPTh8siWr5lsvFYj1Uq4XP0yaJUZJmsh0YXyGv5P0y',
-  pdfjs: 'sha384-/1qUCSGwTur9vjf/z9lmu/eCUYbpOTgSjmpbMQZ1/CtX2v/WcAIKqRv+U1DUCG6e',
-  pdfjsFallback: 'sha384-/1qUCSGwTur9vjf/z9lmu/eCUYbpOTgSjmpbMQZ1/CtX2v/WcAIKqRv+U1DUCG6e',
+  tesseract:'', tesseractFallback:'',
+  mammoth:'', mammothFallback:'',
+  pdfjs:'', pdfjsFallback:''
+};
 };
 function loadScript(src, integrity){
   return new Promise((res, rej) => {
